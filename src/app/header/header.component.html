@@ -16,18 +16,18 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!-- <li><a [routerLink]="['signup']">Signup</a></li>
-        <li><a [routerLink]="['signin']">Signin</a></li> -->
-        <li routerLinkActive="active" *ngIf="!isAuthenticated">
+        <li><a [routerLink]="['signin']">Signin</a></li>
+        <li routerLinkActive="active">
           <a [routerLink]="'register'" style="cursor: pointer">Register</a>
         </li>
-        <li routerLinkActive="active" *ngIf="!isAuthenticated">
+        <li routerLinkActive="active">
           <a [routerLink]="'login'" style="cursor: pointer">Login</a>
         </li>
-        <li routerLinkActive="active" *ngIf="isAuthenticated">
+        <li routerLinkActive="active">
           <a [routerLink]="'login'" style="cursor: pointer" (click)="logout()"
             >Logout</a
           >
-        </li>
+        </li> -->
         <li class="dropdown" appDropdown>
           <a style="cursor: pointer" class="dropdown-toggle" role="button">
             Manage <span class="caret"></span
